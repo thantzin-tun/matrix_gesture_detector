@@ -157,7 +157,7 @@ class _MatrixGestureDetectorState extends State<MatrixGestureDetector> {
   }
 
   void onScaleUpdate(ScaleUpdateDetails details) {
-    widget.onScaleStart();
+    widget.onScaleStart(); // Why added onScaleUpdate? refer: https://github.com/pskink/matrix_gesture_detector/issues/5#issuecomment-553748004
       
     translationDeltaMatrix = Matrix4.identity();
     scaleDeltaMatrix = Matrix4.identity();
